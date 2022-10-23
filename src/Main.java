@@ -78,7 +78,23 @@ public class Main {
         System.out.println( "Если теряять по 250 гр , то " + lose250 + " может потребоваться дней в среднем, чтобы добиться результата похудения.");
         System.out.println("Если теряять по 500 гр , то " + lose500 + " может потребоваться дней в среднем, чтобы добиться результата похудения.");
 
-        //task 7
+        //task 7 Не очень понял как посчитать процент,нашел пример в нэте и подставил свои данные,так же поменял значение с ind на double и результат верный.
+         // Можно решить и с типом double ,но остаток большой, а если привести к float то так лучше выглядит
+        double Masha = 67.760;
+        double Denis = 83.690;
+        double Kristi = 76.230;
+        double salaryMasha = (Masha + Masha * (10.0d / 100.0d));
+        double salaryDenis= (Denis + Denis * (10.0d / 100.0d));
+        double salaryKristi = (Kristi + Kristi * (10.0d / 100.0d));
+        float differenceMasha = (float) ((salaryMasha * 12)-(Masha * 12));
+        float differenceDenis = (float) ((salaryDenis * 12)-(Denis * 12));
+        float differenceKristi = (float) ((salaryKristi * 12)-(Kristi * 12));
+        System.out.println("Маша теперь получает " + salaryMasha + " рублей. Годовой доход вырос на " + differenceMasha + " рублей");
+        System.out.println("Денис теперь получает " + salaryDenis + " рублей. Годовой доход вырос на " + differenceDenis + " рублей");
+        System.out.println("Кристина теперь получает " + salaryKristi + " рублей. Годовой доход вырос на " + differenceKristi + " рублей");
+        //а почему с Кристи выдает ответ с большим коллиством цифр после точки?
+
+
 
 
 
